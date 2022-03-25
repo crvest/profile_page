@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- entire window -->
+    <div class="container"> 
+        <!-- top header only -->
+        <div class="main-header">
+            <div class="nav-bar">
+                <div id="bar-left">
+                    <h1 id="nav-profile">Profile</h1>
+                    <ul id="nav-list">
+                        <li><a href="">Home</a></li>
+                        <li><a href="">My Profile</a></li>
+                        <li><a href="">Find Connections</a></li>
+                    </ul>
+                </div>
+                <button id="signout">Sign Out</button>
+            </div>
+        </div>
+        <!-- everything but the header -->
+        <div class="main">
+            <!-- all cards and white background space -->
+            <div class="content-container">
+
+                <div class="column1">
+
+                    <div class="card-container">
+                        <div class="card-header">
+                            <img src="./images/jane-m.jpg" alt="Jane" class="photolarge">
+                        </div>
+                        <div class="card-content">
+                            
+                            <h1 id="janedoe">Jane Doe</h1>
+                            <div class="location">
+                                <img src="./icons/map-marker.png" alt="map marker" class="smallicon">
+                                <p>Seattle</p>
+                            </div>
+                            <p>Developer | Engineer | Problem Solver</p>
+                            <p>Master of shadows and the Internet!</p>
+                            <img src="./icons/gear.png" alt="gear" class="smallicon">
+                            <a href="">edit profile</a>
+                        </div>
+                    </div>
+
+                    <div class="edu-container">
+                        <div class="edu-header">
+                            <h3>Education</h3>
+                        </div>
+                        <div class="edu-content">
+                            <h3>Coding Dojo - Full Stack Bootcamp</h3>
+                            <h5>Dec 2019 - Mar 2020</h5>
+                            <p>Triple black belt in Python, MERN, and C#</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="column2">
+
+                    <div class="conn-req-container">
+                        <div class="conn-req-header">
+                            <h3><span>2</span>Connection Requests</h3>
+                        </div>
+                        <div class="conn-req-content">
+                            <div class="request">
+                                <div class="req-info">
+                                    <img src="./images/todd-s.jpg" alt="Todd" class="photosmall">
+                                    <p>Todd E</p>
+                                </div>
+                                <div class="req-accept">
+                                    <img src="./icons/accept-circle.png" alt="accept circle" class="buttonsmall">
+                                    <img src="./icons/close-circle.png" alt="close circle" class="buttonsmall">
+                                </div>
+                            </div>
+                            <div class="request">
+                                <div class="req-info">
+                                    <img src="./images/phil-s.jpg" alt="Phil" class="photosmall">
+                                    <p>Phil K</p>
+                                </div>
+                                <div class="req-accept">
+                                    <img src="./icons/accept-circle.png" alt="accept circle" class="buttonsmall">
+                                    <img src="./icons/close-circle.png" alt="close circle" class="buttonsmall">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="your-conn-container">
+                        <div class="your-conn-header">
+                            <h3><span>500+</span>Your Connections</h3>
+                        </div>
+                        <div class="your-conn-content">
+                            <div class="connect">
+                                <img src="./images/adrien-s.jpg" alt="Adrien" class="photosmall">
+                                <p>Adrien D</p>
+                            </div>
+                            <div class="connect">
+                                <img src="./images/anne-s.jpg" alt="Anne" class="photosmall">
+                                <p>Anne J</p>
+                            </div>
+                            <div class="connect">
+                                <img src="./images/alayne-s.jpg" alt="Alayne" class="photosmall">
+                                <p>Alayne T</p>
+                            </div>
+                            <div class="connect">
+                                <img src="./images/arry-s.jpg" alt="Arry" class="photosmall">
+                                <p>Arry Y</p>
+                            </div>
+                        </div>
+                        <div class="your-conn-footer">
+                            <a href="">View More</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
