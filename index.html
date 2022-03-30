@@ -44,8 +44,10 @@
                             </div>
                             <p>Developer | Engineer | Problem Solver</p>
                             <p>Master of shadows and the Internet!</p>
-                            <img src="./icons/gear.png" alt="gear" class="smallicon">
-                            <a href="">edit profile</a>
+                            <button onclick="changeName(janedoe)">
+                                <img src="./icons/gear.png" alt="gear" class="smallicon">
+                                <a href="">edit profile</a>
+                            </button>
                         </div>
                     </div>
 
@@ -65,27 +67,27 @@
 
                     <div class="conn-req-container">
                         <div class="conn-req-header">
-                            <h3><span>2</span>Connection Requests</h3>
+                            <h3><span id="requestcount">2</span>Connection Requests</h3>
                         </div>
                         <div class="conn-req-content">
-                            <div class="request">
+                            <div id="toddrequest" class="request">
                                 <div class="req-info">
                                     <img src="./images/todd-s.jpg" alt="Todd" class="photosmall">
                                     <p>Todd E</p>
                                 </div>
                                 <div class="req-accept">
-                                    <img src="./icons/accept-circle.png" alt="accept circle" class="buttonsmall">
-                                    <img src="./icons/close-circle.png" alt="close circle" class="buttonsmall">
+                                    <button onclick="hide(toddrequest); requestCount(requestcount)"><img src="./icons/accept-circle.png" alt="accept circle" class="buttonsmall"></button>
+                                    <button onclick="hide(toddrequest); requestCount(requestcount)"><img src="./icons/close-circle.png" alt="close circle" class="buttonsmall"></button>
                                 </div>
                             </div>
-                            <div class="request">
+                            <div id="philrequest" class="request">
                                 <div class="req-info">
                                     <img src="./images/phil-s.jpg" alt="Phil" class="photosmall">
                                     <p>Phil K</p>
                                 </div>
                                 <div class="req-accept">
-                                    <img src="./icons/accept-circle.png" alt="accept circle" class="buttonsmall">
-                                    <img src="./icons/close-circle.png" alt="close circle" class="buttonsmall">
+                                    <button onclick="hide(philrequest); requestCount(requestcount)"><img src="./icons/accept-circle.png" alt="accept circle" class="buttonsmall"></button>
+                                    <button onclick="hide(philrequest); requestCount(requestcount)"><img src="./icons/close-circle.png" alt="close circle" class="buttonsmall"></button>
                                 </div>
                             </div>
                         </div>
@@ -121,5 +123,6 @@
             </div>
         </div>
     </div>
+    <script src="./script.js"></script>
 </body>
 </html>
